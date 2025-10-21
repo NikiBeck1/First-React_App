@@ -13,6 +13,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
+        <form>
         <input
           value={this.state.text}
           onChange={(e) => this.setState({ text: e.target.value })}
@@ -27,6 +28,7 @@ class App extends React.Component {
         >
           Add
         </button>
+        </form> 
         <ul>
           {this.state.list.map((item, index) => {
             return <li key={index}>{item}</li>;
