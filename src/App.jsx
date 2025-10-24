@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import FilmsList from './components/filmsList.jsx';
 
 class App extends React.Component {
   constructor(props) {
@@ -34,6 +35,7 @@ class App extends React.Component {
             return <li key={index}>{item}</li>;
           })}
         </ul>
+        <FilmsList />
       </div>
     );
   }
