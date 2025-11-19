@@ -7,4 +7,11 @@ function getListOf(films, key) {
   return films.map(film => film[key]);
 }
 
-export { getListOf, filterFilmsByDirector };
+function getFilmStats(films, key) {
+  return Object.fromEntries(
+    films.map(film => [film.title, film[key]])
+  );
+}
+
+
+export { getListOf, filterFilmsByDirector, getFilmStats };
